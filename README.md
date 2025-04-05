@@ -1,3 +1,10 @@
+Działając na zbiorze datasource1 należy dla każdego miesiąca (w określonym roku) wyznaczyć liczbę pasażerów,
+którzy wsiedli do taksówek w poszczególnych strefach (strefa włączenia taksometru) i opłacili swój przejazd gotówką.
+W wynikowym zbiorze (3) powinny znaleźć się atrybuty:
+• miesiąc,
+• strefa rozpoczęcia podróży oraz
+• liczba pasażerów, jaka rozpoczęła swoją podróż w podanej strefie w podanym miesiącu 
+
 Commands:
 
 gsutil cp gs://$BUCKET_NAME/projekt/datasource1/* ./datasource1/
