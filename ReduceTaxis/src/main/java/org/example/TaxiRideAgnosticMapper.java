@@ -16,7 +16,7 @@ public class TaxiRideAgnosticMapper {
             return null;
         }
 
-        var key = ride.pickupDatetime.getYear() + "-" + ride.pickupDatetime.getMonthValue()  + "-" + zoneName;
+        var key = ride.pickupDatetime.getYear() + "-" + ride.pickupDatetime.getMonthValue()  + "," + ride.puLocationId;
 
         return new AbstractMap.SimpleEntry<>(key, ride.passengerCount);
     }
