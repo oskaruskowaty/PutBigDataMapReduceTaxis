@@ -26,9 +26,9 @@ public class AppDataReducer extends Reducer<Text, Text, Text, Text> {
 
         double averageRating = totalRatingCount == 0 ? 0 : totalRatings / totalRatingCount;
 
-        AppDataResult resultData = new AppDataResult(totalRatings, totalRatingCount, appCount, averageRating);
-        result.set(gson.toJson(resultData));
+        String csv = totalRatings + "," + totalRatingCount + "," + appCount + "," + averageRating;
 
+        result.set(csv);
         context.write(key, result);
     }
 
